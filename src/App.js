@@ -10,7 +10,7 @@ const App = () => {
    console.log('configured URL: ', functURL)
 
    useEffect(() => {
-      fetch(functURL)
+      fetch('https://api.nasa.gov/planetary/apod?api_key=qHRNOGuPFkO0alZ1AfyaVx2Y5ypOhjFHp5weq8ol&count=1&hd=true')
          .then((response) => response.json())
          .then((data) => {
             console.log(data);
