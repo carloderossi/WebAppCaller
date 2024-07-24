@@ -1,12 +1,13 @@
 // import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from 'react';
-
+require('dotenv').config();
 
 const App = () => {
    const [cdrCloudIDs, setcdrCloudIDs] = useState([]);
    const functURL = process.env.CDR_ID_FUNCT_URL; 
-   
+   const myVariable = process.env.MY_KEY;
+
    console.log('configured URL: ', functURL)
 
    useEffect(() => {
@@ -29,6 +30,7 @@ const App = () => {
                 <h2 className="cdrCloudID-explanation">{cdrCloudID.title}</h2>
                 <p className="cdrCloudID-explanation">Explanation: {cdrCloudID.explanation}</p>
                 <p className="cdrCloudID-title">configured function's URL: {functURL}</p>
+                <p className="cdrCloudID-title">configured function's URL from env file: {myVariable}</p>
                 <p className="cdrCloudID-hdurl">{cdrCloudID.hdurl}</p>
              </div>
           );
