@@ -24,7 +24,7 @@
   color: white;
 }
 
-.nasaimgs-container {
+.cdrCloudIDs-container {
   background-color: #bbbfc4;
 }
 
@@ -39,17 +39,17 @@
   width: 50%;
   }
 
-.nasaimg-explanation {
+.cdrCloudID-explanation {
   color: #05213d;
   text-align: center;
 }
 
-.nasaimg-title {
+.cdrCloudID-title {
   text-align: center;
   color: #61dafb;
 }
 
-.nasaimg-hdurl{
+.cdrCloudID-hdurl{
   color: #0f6b2c;
 }
 
