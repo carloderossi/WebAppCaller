@@ -25,10 +25,10 @@ const App = () => {
     <div className="cdrCloudIDs-container">
        {cdrCloudIDs.map((cdrCloudID) => {
           return (
-             <div className="cdrCloudID-id" key={cdrCloudID.identity}>
-                <h2 className="cdrCloudID-title">{cdrCloudID.name}</h2>
-                <p className="cdrCloudID-explanation">{cdrCloudID.headers}</p>
-                <p className="cdrCloudID-hdurl">{cdrCloudID.uri}</p>
+             <div className="cdrCloudID-title" key={cdrCloudID.url}>
+                <h2 className="cdrCloudID-title">{cdrCloudID.title}</h2>
+                <p className="cdrCloudID-explanation">{cdrCloudID.explanation}</p>
+                <p className="cdrCloudID-hdurl">{cdrCloudID.hdurl}</p>
              </div>
           );
        })}
