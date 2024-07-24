@@ -27,8 +27,8 @@ const App = () => {
           return (
              <div className="cdrCloudID-title" key={cdrCloudID.url}>
                 <h2 className="cdrCloudID-explanation">{cdrCloudID.title}</h2>
-                <p className="cdrCloudID-explanation">{cdrCloudID.explanation}</p>
-                <p className="cdrCloudID-title">{functURL}</p>
+                <p className="cdrCloudID-explanation">Explanation: {cdrCloudID.explanation}</p>
+                <p className="cdrCloudID-title">configured function's URL: {functURL}</p>
                 <p className="cdrCloudID-hdurl">{cdrCloudID.hdurl}</p>
              </div>
           );
